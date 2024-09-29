@@ -1,0 +1,134 @@
+
+.navbar{
+    display:  flex;
+    background-color: #fff;
+    justify-content:  space-around;
+    align-items: center;
+    padding: 0 30px;
+    color: black;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index:9999;
+   
+}
+
+.navbar-logo{
+    color: black;
+    font-size:  2rem;
+    cursor: pointer;
+
+}
+.nav-links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+    padding: 0.7rem 1rem;
+}
+
+.nav-links a{
+    color:black ;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight:bold;
+    }
+.nav-links a:hover{
+    background-color: #01959a;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-icons{
+    color:  white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+    .mobile-menu-icon{
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      
+    }
+    .nav-links button{
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    @media (max-width:768px) {
+        .nav-links{
+            display: none;
+        }
+        .navbar{
+            z-index: 99;
+        }
+       
+        .nav-links-mobile{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            background-color:#fff;
+            align-items: center;
+            margin-bottom: 10px;
+            z-index: -1;
+            padding: 30px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out; /* Transition applied */
+        }
+    
+        .mobile-menu-icon{
+            display: block;
+            cursor: pointer;
+            transition: 0.3s ease-in-out; /* Optional for smooth icon transitions */
+        }
+    
+        .nav-links-mobile a{
+            color:  black;
+            text-decoration: none;
+            padding:  20px ;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s ease-in-out; /* Transition applied to links */
+        }
+    
+        .nav-icon{
+            margin-bottom: 10px;
+        }
+    
+        .nav-links-mobile a:hover{
+            background-color:#01959a;
+        }
+    
+        button{
+            background-color: #01959a;
+            padding: 10px;
+            width: 50%;
+            font-size: 20px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out; /* Transition applied to buttons */
+        }
+    }
+    
+
+
