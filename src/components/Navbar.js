@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className='navbar'>
             <h1 className='navbar-logo'>Trippy</h1>
             <div className={isMobile ? 'nav-links-mobile' : 'nav-links'}>
-                <Link to='/home'>
+                <Link to='/'>
                     <FaHome /> Home
                 </Link>
                 <Link to='/about'>

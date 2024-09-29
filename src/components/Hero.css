@@ -57,6 +57,10 @@ img{
     display: none;
 
 }
+.hero-text a:hover{
+    background-color: black;
+    color: #fff;
+}
 
 @media screen and (max-width:768px){
 
